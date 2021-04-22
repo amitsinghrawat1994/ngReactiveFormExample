@@ -1,0 +1,10 @@
+<div>
+    <hr>
+    <app-child [info]="contactInfo" (infoChange)="onInfoChange($event)"></app-child>
+    <hr>
+    <p>Contact Info</p>
+    <pre>
+      {{contactInfo | json}}
+    </pre>
+    <hr>
+</div>
